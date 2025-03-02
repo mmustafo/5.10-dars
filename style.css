@@ -1,3 +1,8 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;800;900&display=swap);
+
+body {
+  font-family: "Roboto", sans-serif;
+}
 .loader {
   width: 48px;
   height: 48px;
@@ -30,6 +35,146 @@
   background: rgba(0, 0, 0, 0.5);
 }
 
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .hidden {
   display: none;
+}
+
+#list {
+  display: flex;
+  gap: 30px;
+  max-width: 1200px;
+  flex-wrap: wrap;
+  margin-left: 55px;
+}
+.card {
+  padding: 30px;
+  max-width: 300px;
+  list-style: none;
+  border: 2px solid;
+}
+.thumbline {
+}
+.text__h2 {
+  color: yellow;
+  background-color: black;
+  border-radius: 15px;
+  padding: 8px;
+}
+.text__h3 {
+  background-color: yellow;
+  display: inline-block;
+  padding: 7px;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+}
+.text__h5 {
+  cursor: pointer;
+  font-size: 25px;
+  color: bisque;
+  background-color: burlywood;
+  width: 50px;
+  padding: 8px;
+  border-radius: 5px;
+}
+.description {
+  font-size: 20px;
+}
+
+.nav {
+  font-family: "Oswald";
+  background: rgb(131, 58, 180);
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(59, 53, 102, 1) 31%,
+    rgba(111, 109, 128, 1) 78%
+  );
+  border-radius: 1.5rem;
+  margin-top: 2rem;
+  border: 2px solid rgb(255, 132, 0);
+}
+.nav__content {
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav__ul {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  margin-right: 2rem;
+}
+.nav__li {
+}
+.nav__li__a {
+  font-size: 2rem;
+  color: var(--white);
+  font-weight: 500;
+}
+.nav__li__a:hover {
+  color: yellowgreen;
+  transition: 0.4s ease;
+}
+.nav__li__a:active {
+  color: black;
+  transition: 0.4s ease;
+}
+
+
+/* hader text qismi */
+.header__text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 2px solid aqua;
+}
+.header__text__h1 {
+  color: var(--white);
+  font-family: "Archivo Black";
+  max-width: 500px;
+  font-size: 4rem;
+  text-align: center;
+}
+
+/* grov section start */
+.grov__content {
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.grov__content__text {
+  margin-top: 4rem;
+}
+.grov__text__h2 {
+  color: var(--white);
+  font-family: "Concert One";
+  font-size: 3rem;
+  max-width: 400px;
+  font-weight: 500;
+  text-align: center;
+}
+
+
+img {
+  display: flex;
+  object-fit: cover;
+}
+
+.nav__ul {
+}
+.nav__li {
+  list-style: none;
+}
+.nav__li__a {
+  color: #fff;
+  text-decoration: none;
 }

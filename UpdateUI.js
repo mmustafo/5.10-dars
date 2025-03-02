@@ -1,6 +1,6 @@
 const template = document.querySelector('template')
 const list = document.getElementById('list')
-export function UpdateUI(products){
+export function UpdateUI({products}){
 products.forEach((product) => {
      const {thumbnail, title, description, price, rating } = product
      const clone = template.content.cloneNode(true)
